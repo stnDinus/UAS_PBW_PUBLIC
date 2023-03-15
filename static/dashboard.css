@@ -1,0 +1,60 @@
+:root {
+  --black: #121416;
+  --darker: #25292d;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-darker {
+  background-color: var(--darker);
+}
+
+body {
+  display: flex;
+  background-color: var(--black);
+}
+
+nav {
+  width: 300px;
+  --margin: 2vh;
+  margin: var(--margin);
+  height: calc(100vh - var(--margin) * 2);
+}
+
+nav > div[value] {
+  cursor: pointer;
+}
+
+#root {
+  width: calc(100vw - 300px);
+  --margin: 2vh;
+  margin: var(--margin);
+  height: calc(100vh - var(--margin) * 2);
+}
+
+#tabelBerita {
+  width: 100%;
+}
+
+.drop-area {
+  border-style: dashed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gambar-baru {
+  background-color: #57cc9980;
+  transition: background-color 0.3s;
+  min-height: 200px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: #57cc99;
+  cursor: pointer;
+}
+
+.gambar-baru:hover {
+  background-color: #57cc99;
+}

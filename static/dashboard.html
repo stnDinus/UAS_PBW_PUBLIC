@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body>
+    <div
+      id="toasts"
+      class="position-fixed p-4"
+      style="right: 0; bottom: 0; height: 100vh; z-index: 1000"
+    ></div>
+    <nav class="bg-darker text-light rounded-lg">
+      <div class="bg-primary h5 px-3 py-4 rounded-top mb-4">
+        <i class="bi-speedometer2 ml-4 mr-3"></i>
+        Dashboard
+      </div>
+      <div value="berita" class="button h5 m-3 py-3 rounded-lg">
+        <i class="bi-newspaper ml-4 mr-3"></i>
+        Berita
+      </div>
+      <div value="galeri" class="button h5 m-3 py-3 rounded-lg">
+        <i class="bi-image ml-4 mr-3"></i>
+        Galeri
+      </div>
+      <div value="video" class="button h5 m-3 py-3 rounded-lg">
+        <i class="bi-camera-video ml-4 mr-3"></i>
+        Video
+      </div>
+      <div value="pengaduan" class="button h5 m-3 py-3 rounded-lg">
+        <i class="bi-megaphone ml-4 mr-3"></i>
+        Pengaduan
+      </div>
+    </nav>
+    <div
+      id="root"
+      class="overflow-auto p-4 bg-darker text-light rounded-lg ml-0"
+    ></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
